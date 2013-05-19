@@ -1,0 +1,1095 @@
+body {
+	font-family: arial;
+	margin: 0 auto;
+	width: 1100px;
+	background-color: #222;
+}
+
+@font-face{font-family:bigfish;src:url(../fonts/Bigfish.ttf);}
+@font-face{font-family:pupreg;src:url(../fonts/pupcatrg.ttf);}
+
+
+#header {
+	position:relative;
+}
+
+#header h1 {
+	font-family: bigfish;
+	font-size: 5em;
+	padding: 0;
+	margin: 0 0 40px 60px;
+	color:#cecece;
+	}
+
+#header h3 {
+font-family: pupreg;
+font-size:1.75em;
+right:50px;
+padding:0;
+text-align: right;
+position:absolute;
+top:47px;
+font-weight:normal;
+color:#555;
+z-index:#cecece;
+}
+
+#header h3 a {
+	text-decoration:none;
+	color:#cecece;
+}
+
+#header h3 a:hover {
+	color:yellow;
+}
+
+/* BASIC SETUP
+================================*/
+#cloud {
+	position:absolute;
+	top: -100px;
+	left:-150px;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes cloudmove {
+0%{left:-150px;}
+100%{left:-1000px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#cloud {
+-ms-animation-name: cloudmove;
+-ms-animation-duration:100s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:0% 0%;
+-ms-animation-delay:0;
+}
+
+
+#movie-frame{
+	position:absolute;
+	top:95px;
+	width:1108px;
+}
+
+#frame {
+	overflow:hidden;
+	width: 1030px;
+	height:570px;
+	margin: 0 auto;
+	padding:0;
+  background-color: #CDE5E8;
+  background-image: -ms-linear-gradient(top, #CDE5E8, #AADAE2); /* FF3.6 */
+  background-image: -ms-gradient(linear,left top,left bottom,color-stop(0, #65A1CE),color-stop(1, #AADAE2)); /* Saf4+, Chrome */
+
+}
+
+#stage {
+	position:relative;
+	top:-40px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#ground {
+	position:absolute;
+	bottom:-215px;
+	right: 0;
+	width: 1030px;
+}
+
+/* BASIC SETUP
+================================*/
+#twitter-feed {
+	position:absolute;
+	right:0px;
+	top:100px;
+	width:430px;
+	z-index: 1000;
+}
+
+#twitter-feed #twtr-widget-1 {
+	width:330px;
+	left: 50px;
+	top:28px;
+	position:relative;
+	z-index: 1500;
+}
+
+#twitter-feed #sign {
+position:absolute;
+top:0;
+left:0;
+z-index: 1100;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes twitter-swivel {
+0%{-ms-transform:rotate(0deg);}
+71%{-ms-transform:rotate(0deg);}
+72%{-ms-transform:rotate(10deg);}
+73%{-ms-transform:rotate(-5deg);}
+74%{-ms-transform:rotate(0deg);}
+100%{-ms-transform:rotate(0deg);}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#twitter-feed  {
+-ms-animation-name: twitter-swivel;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+}
+
+
+#mrt {
+	height:500px;
+	left:-30px;
+	margin:0;
+	padding:0;
+	position:relative;
+	width:300px;
+	top:0;
+	}
+
+	/* BASIC SETUP
+	================================*/
+	#head {
+		height:206px;
+		left:57px;
+		margin:0;
+		padding:0;
+		position:relative;
+		top:125px;
+		width:243px;
+		z-index:1005;		
+	}
+	
+	/* ANIMATION SETUP
+	================================*/
+	@-ms-keyframes head-swivel {
+	0%{-ms-transform:rotate(0deg);}
+	5%{-ms-transform:rotate(-10deg);}
+	50%{-ms-transform:rotate(-10deg);}
+	55%{-ms-transform:rotate(0deg);}
+	100%{-ms-transform:rotate(0deg);}
+	}
+
+	/* ANIMATION FUNCTION
+	================================*/
+	#head {
+	-ms-animation-name: head-swivel;
+	-ms-animation-duration:6s;
+	-ms-animation-iteration-count:infinite;
+	-ms-transform-origin:50% 100%;
+	-ms-animation-delay:0;
+	-ms-animation-timing-function:ease-in-out;
+	}
+	
+
+	#head .svg {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1005;
+	}
+	
+	/* BASIC SETUP
+	================================*/
+	#outter-skull {
+		position:relative;
+		top:0px;
+	}	
+		
+	/* ANIMATION SETUP
+	================================*/
+	@-ms-keyframes head-breathing {
+	0%{top:0px;}
+	50%{top:5px;}
+	100%{top:0px;}
+	}
+
+	/* ANIMATION FUNCTION
+	================================*/
+	#outter-skull {
+	-ms-animation-name: head-breathing;
+	-ms-animation-duration:2000ms;
+	-ms-animation-iteration-count:infinite;
+	-ms-transform-origin:50% 100%;
+	-ms-animation-delay:200ms;
+	-ms-animation-timing-function:ease-in-out;
+	}	
+		
+		
+	/* BASIC SETUP
+	================================*/		
+		#feather-left {
+			height:111px;
+			left:-5px;
+			margin:0;
+			padding:0;
+			position:absolute;
+			top:107px;
+			width:38px;
+			z-index:1015;
+		}
+		/* ANIMATION SETUP
+		================================*/
+		@-ms-keyframes feather-l {
+			0%{-ms-transform:rotate(0deg);}
+			5%{-ms-transform:rotate(11deg);}
+			50%{-ms-transform:rotate(11deg);}
+			55%{-ms-transform:rotate(-7deg);}
+			60%{-ms-transform:rotate(0deg);}
+			100%{-ms-transform:rotate(0deg);}
+		}
+
+		/* ANIMATION FUNCTION
+		================================*/
+		#feather-left {
+		-ms-animation-name: feather-l;
+		-ms-animation-duration:6s;
+		-ms-animation-iteration-count:infinite;
+		-ms-transform-origin:50% 0%;
+		-ms-animation-delay:0;
+		-ms-animation-timing-function:ease-in-out;
+		}
+		
+		/* BASIC SETUP
+		================================*/
+		#feather-right {
+			height:111px;
+			margin:0;
+			padding:0;
+			position:absolute;
+			right:-5px;
+			top:108px;
+			width:38px;
+			z-index:1015;
+		}
+		
+		
+			/* ANIMATION SETUP
+			================================*/
+			@-ms-keyframes feather-r {
+			0%{-ms-transform:rotate(0deg);}
+			5%{-ms-transform:rotate(11deg);}
+			50%{-ms-transform:rotate(11deg);}
+			55%{-ms-transform:rotate(-7deg);}
+			60%{-ms-transform:rotate(0deg);}
+			100%{-ms-transform:rotate(0deg);}
+			}
+
+			/* ANIMATION FUNCTION
+			================================*/
+			#feather-right  {
+			-ms-animation-name: feather-r;
+			-ms-animation-duration:6s;
+			-ms-animation-iteration-count:infinite;
+			-ms-transform-origin:50% 0%;
+			-ms-animation-delay:0;
+			-ms-animation-timing-function:ease-in-out;
+			}	
+		
+		
+		/* BASIC SETUP
+		================================*/
+		#lips {
+			height:40px;
+			left:68px;
+			margin:0;
+			padding:0;
+			position:absolute;
+			top:137px;
+			width:100px;
+			z-index:1015;
+		}
+		
+		
+		/* ANIMATION SETUP
+		================================*/
+		@-ms-keyframes lip-slide {
+		0%{ top:137px;}
+		2%{top:137px;}
+		6%{ top:132px;}
+		50%{top:132px;}
+		55%{top:137px;}
+		100%{top:137px;}
+		}
+
+		/* ANIMATION FUNCTION
+		================================*/
+		#lips {
+		-ms-animation-name: lip-slide;
+		-ms-animation-duration:6s;
+		-ms-animation-iteration-count:infinite;
+		-ms-transform-origin:50% 100%;
+		-ms-animation-delay:0;
+		-ms-animation-timing-function:ease-in-out;
+		}
+		
+	/* BASIC SETUP
+	================================*/	
+	#brow-left {
+		height:64px;
+		left:37px;
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:34px;
+		width:80px;
+		z-index:1050;
+	}
+	/* ANIMATION SETUP
+	================================*/
+	@-ms-keyframes brow-lt-rotate {
+	0%{-ms-transform:rotate(0deg); top:34px;}
+	5%{-ms-transform:rotate(10deg); top:45px;}
+	50%{-ms-transform:rotate(10deg); top:45px;}
+	51%{-ms-transform:rotate(10deg); top:45px;}
+	53%{-ms-transform:rotate(0deg); top:34px;}
+	100%{-ms-transform:rotate(0deg); top:34px;}
+	}
+
+	/* ANIMATION FUNCTION
+	================================*/
+	#brow-left  {
+	-ms-animation-name: brow-lt-rotate;
+	-ms-animation-duration:6s;
+	-ms-animation-iteration-count:infinite;
+	-ms-transform-origin:100% 100%;
+	-ms-animation-delay:0;
+	-ms-animation-timing-function:ease-in-out;
+	}
+	
+	
+	
+	
+/* BASIC SETUP
+================================*/	
+	#brow-right {
+		height:64px;
+		margin:0;
+		padding:0;
+		position:absolute;
+		right:43px;
+		top:35px;
+		width:80px;
+		z-index:1050;
+	}	
+
+	/* ANIMATION SETUP
+	================================*/
+	@-ms-keyframes brow-rt-rotate {
+	0%{-ms-transform:rotate(0deg); top:34px;}
+	5%{-ms-transform:rotate(-10deg); top:45px;}
+	50%{-ms-transform:rotate(-10deg); top:45px;}
+	51%{-ms-transform:rotate(-10deg); top:45px;}
+	53%{-ms-transform:rotate(0deg); top:34px;}
+	100%{-ms-transform:rotate(0deg); top:34px;}
+	}
+
+	/* ANIMATION FUNCTION
+	================================*/
+	#brow-right {
+	-ms-animation-name: brow-rt-rotate;
+	-ms-animation-duration:6s;
+	-ms-animation-iteration-count:infinite;
+	-ms-transform-origin:0% 100%;
+	-ms-animation-delay:0;
+	-ms-animation-timing-function:ease-in-out;
+	}
+
+
+
+#two-eyes {
+	position:absolute;
+	top: 83px;
+	left: 54px;
+	padding:0;
+	margin:0;
+	width:132px;
+	height:53px;
+	z-index:1039;
+}
+
+
+#two-eyes .mask {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1100;
+}
+
+/*BASIC SETUP
+================================*/
+#two-eyes .lids {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1080;
+	
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes two-eyes-lids {
+0%{top:-1px;}
+5%{top:-1px;}
+6%{top:8px;}
+7%{top:-1px;}
+29%{top:-1px;}
+30%{top:8px;}
+31%{top:-1px;}
+69%{top:-1px;}
+70%{top:8px;}
+71%{top:-1px;}
+98%{top:-1px;}
+99%{top:8px;}
+100%{top:-1px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#two-eyes .lids  {
+-ms-animation-name: two-eyes-lids;
+-ms-animation-duration:18000ms;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 0%;
+-ms-animation-delay:0s;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+#two-eyes .back {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1050;
+}
+
+/*BASIC SETUP
+================================*/
+#two-eyes .pupils {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1045;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes two-eyes-pupils {
+0%{left:0;}
+5%{left:7px;}
+50%{left:7px;}
+51%{left:7px;}
+55%{left:0px;}
+100%{left:0px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#two-eyes .pupils  {
+-ms-animation-name: two-eyes-pupils;
+-ms-animation-duration:6s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+#two-eyes .whites {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1040;
+}
+
+
+
+/* BASIC SETUP
+================================*/
+	#the-body {
+		width: 340px;
+		height: 266px;
+		padding:0;
+		margin:0;
+		position:relative;
+	}
+	
+	/* ANIMATION SETUP
+	================================*/
+	@-ms-keyframes body-breathing {
+	0%{top:0px;}
+	50%{top:4px;}
+	100%{top:0px;}
+	}
+
+	/* ANIMATION FUNCTION
+	================================*/
+	#the-body {
+	-ms-animation-name: body-breathing;
+	-ms-animation-duration:2000ms;
+	-ms-animation-iteration-count:infinite;
+	-ms-transform-origin:50% 0%;
+	-ms-animation-delay:0s;
+	-ms-animation-timing-function:ease-in-out;
+	}
+	
+	
+	
+		
+		#torso {
+			width: 340px;
+			height: 266px;
+			padding:0;
+			margin:0;
+			position:relative;
+			z-index:1004;
+			
+		}
+
+
+
+		/* BASIC SETUP
+		================================*/
+	#arm-l {
+		height:351px;
+		left:-15px;
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:20px;
+		width:113px;
+		z-index:1003;		
+	}
+			
+		/* ANIMATION SETUP
+		================================*/
+		@-ms-keyframes arm-l {
+			0%{-ms-transform:rotate(0deg);	 left:-15px;}
+			35%{-ms-transform:rotate(0deg);	 left:-15px;}
+			37%{-ms-transform:rotate(40deg); left:-5px;}
+			46%{-ms-transform:rotate(40deg); left:-5px;}
+			50%{-ms-transform:rotate(0deg);	 left:-15px;}
+			100%{-ms-transform:rotate(0deg); left:-15px;}
+		}
+
+
+
+	
+	
+		/* ANIMATION FUNCTION
+		================================*/
+		#arm-l {
+		-ms-animation-name: arm-l;
+		-ms-animation-duration:18s;
+		-ms-animation-iteration-count:infinite;
+		-ms-transform-origin:50% 0%;
+		-ms-animation-delay:0;
+		-ms-animation-timing-function:ease-in-out;
+		}			
+						
+			#upper-arm-l {
+				width: 113px;
+				height: 177px;
+				padding:0;
+				margin:0;
+				
+			}
+
+			/* BASIC SETUP
+			================================*/			
+			#fore-arm-l	{
+				width: 89px;
+				height: 174px;
+				padding:0;
+				margin:0;
+				position:relative;
+				top:-42px;
+				left:0;
+			}
+			
+			/* ANIMATION SETUP
+			================================*/
+			@-ms-keyframes forearm-l {
+				0%{-ms-transform:rotate(0deg);top:-42px;left:0;}
+				34%{-ms-transform:rotate(0deg);top:-42px;left:0;}
+				38%{-ms-transform:rotate(-90deg);top:-32px;left:-30px;}
+				45%{-ms-transform:rotate(-90deg);top:-32px;left:-30px;}
+				50%{-ms-transform:rotate(0deg);top:-42px;left:0;}
+				100%{-ms-transform:rotate(0deg);top:-42px;left:0;}
+				
+			}
+
+			/* ANIMATION FUNCTION
+			================================*/
+			#fore-arm-l {
+			-ms-animation-name: forearm-l;
+			-ms-animation-duration:18s;
+			-ms-animation-iteration-count:infinite;
+			-ms-transform-origin:50% 0%;
+			-ms-animation-delay:0;
+			-ms-animation-timing-function:ease-in-out;
+			}			
+			
+
+		#fore-arm-l .svg {
+			position:relative;
+		}
+
+		/* BASIC SETUP
+		================================*/		
+		#arm-r	{
+			height:351px;
+			margin:0;
+			padding:0;
+			position:absolute;
+			right:-10px;
+			top:20px;
+			width:113px;
+			z-index:1003;
+		}
+		
+		
+	
+		/* ANIMATION SETUP
+	================================*/	
+		@-ms-keyframes arm-r {
+			0%{-ms-transform:rotate(0deg);		right:-10px;}
+			36%{-ms-transform:rotate(0deg);		right:-10px;}
+			37%{-ms-transform:rotate(-40deg);	right:0px;}
+			46%{-ms-transform:rotate(-40deg);	right:0px;}
+			50%{-ms-transform:rotate(0deg);		right:-10px;}
+			70%{-ms-transform:rotate(0deg);		right:-10px;}
+			71%{-ms-transform:rotate(-60deg);	right:0px;}
+			72%{-ms-transform:rotate(0deg);		right:-10px;}
+			100%{-ms-transform:rotate(0deg);	right:-10px;}
+		}
+
+
+		/* ANIMATION FUNCTION
+		================================*/
+		#arm-r {
+		-ms-animation-name: arm-r;
+		-ms-animation-duration:18s;
+		-ms-animation-iteration-count:infinite;
+		-ms-transform-origin:50% 0%;
+		-ms-animation-delay:0;
+		-ms-animation-timing-function:ease-in-out;
+		}
+	 	 
+			#upper-arm-r {
+				width: 113px;
+				height: 177px;
+				padding:0;
+				margin:0;
+			
+			}
+
+			/* BASIC SETUP
+			================================*/
+	 	 	#fore-arm-r {
+				width: 89px;
+				height: 174px;
+				padding:0;
+				margin:0;
+				left:25px;
+				position:relative;
+				top:-42px;
+			}	
+
+			/* ANIMATION SETUP
+			================================*/
+			@-ms-keyframes forearm-r {
+				0%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				34%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				38%{-ms-transform:rotate(90deg);top:-32px;left:50px;}
+				45%{-ms-transform:rotate(90deg);top:-32px;left:50px;}
+				50%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				69%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				70%{-ms-transform:rotate(30deg);top:-42px;left:25px;}
+				72%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				100%{-ms-transform:rotate(0deg);top:-42px;left:25px;}
+				
+			}
+
+			/* ANIMATION FUNCTION
+			================================*/
+			#fore-arm-r {
+			-ms-animation-name: forearm-r;
+			-ms-animation-duration:18s;
+			-ms-animation-iteration-count:infinite;
+			-ms-transform-origin:50% 0%;
+			-ms-animation-delay:0;
+			-ms-animation-timing-function:ease-in-out;
+			}	
+			
+			#fore-arm-r .svg {
+			}
+	
+	#legs {
+		height:173px;
+		left:60px;
+		margin:0;
+		padding:0;
+		position:relative;
+		top:-50px;
+		width:221px;
+		z-index:2;
+	}
+	
+	#tree {
+		left: 45px;
+		position: absolute;
+		right: 0px;
+		top: -300px;
+		z-index:10;
+	}
+	
+
+
+
+/* BIRD SETUP
+================================*/
+#bird {
+	width:90px;
+	height:90px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 150px; /* 125px*/
+	right: 100px;
+	z-index: 999;
+}
+
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-bounce {
+	0%{-ms-transform:rotate(-5deg);top:125px;right:100px;}
+	70%{-ms-transform:rotate(-5deg);top:125px;right:100px;}
+	72%{-ms-transform:rotate(0deg);top:105px;right:0px;}
+	73%{-ms-transform:rotate(0deg);top:495px;right:-30px;}
+	74%{-ms-transform:rotate(0deg);top:470px;right:-35px;}
+	75%{-ms-transform:rotate(0deg);top:495px;right:-40px;}
+	76%{-ms-transform:rotate(0deg);top:490px;right:-42px;}
+	77%{-ms-transform:rotate(0deg);top:495px;right:-47px;}
+	86%{-ms-transform:rotate(0deg);top:495px;right:-47px;}
+	100%{-ms-transform:rotate(0deg);top:495px;right:-200px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird {
+-ms-animation-name: bird-bounce;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 0%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}	
+
+#bird img {
+	position: absolute;
+	border:1px solid transparent;
+}
+
+
+
+/* BASIC SETUP
+================================*/
+#bird-torso {
+	position:relative;
+	top:10px;
+	left:10px;
+	z-index:500;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-torso-action {
+	0%{-ms-transform:rotate(0deg);top:10px;}
+	80%{-ms-transform:rotate(0deg);top:10px;}
+	81%{-ms-transform:rotate(0deg);top:0px;}
+	82%{-ms-transform:rotate(0deg);top:0px;}
+	85%{-ms-transform:rotate(0deg);top:3px;}
+	87%{-ms-transform:rotate(0deg);top:-3px;}
+	89%{-ms-transform:rotate(0deg);top:3px;}
+	91%{-ms-transform:rotate(0deg);top:-3px;}
+	93%{-ms-transform:rotate(0deg);top:3px;}
+	95%{-ms-transform:rotate(0deg);top:-3px;}
+	97%{-ms-transform:rotate(0deg);top:0px;}
+	100%{-ms-transform:rotate(0deg);top:0px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird-torso {
+-ms-animation-name: bird-torso-action;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+#bird-body {
+	z-index:500;
+}
+
+
+/* BASIC SETUP
+================================*/
+#bird #bird-wing {
+	left:22px;
+	top:38px;
+	z-index:510;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-wing-action {
+	
+	0%{-ms-transform:rotate(45deg);}
+	63%{-ms-transform:rotate(45deg);}
+	64%{-ms-transform:rotate(0deg);}
+	65%{-ms-transform:rotate(42deg);}
+	66%{-ms-transform:rotate(0deg);}
+	67%{-ms-transform:rotate(45deg);}
+	68%{-ms-transform:rotate(0deg);}
+	69%{-ms-transform:rotate(42deg);}
+	70%{-ms-transform:rotate(0deg);}
+	71%{-ms-transform:rotate(45deg);}
+	72%{-ms-transform:rotate(0deg);}	
+	73%{-ms-transform:rotate(45deg);}
+	74%{-ms-transform:rotate(0deg);}
+	75%{-ms-transform:rotate(42deg);}
+	76%{-ms-transform:rotate(0deg);}
+	77%{-ms-transform:rotate(45deg);}
+	78%{-ms-transform:rotate(0deg);}
+	100%{-ms-transform:rotate(0deg);}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird #bird-wing {
+-ms-animation-name: bird-wing-action;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:100% 0%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+/* BASIC SETUP
+================================*/
+#bird #bird-eye {
+	left:55px;
+	top:21px;
+	z-index:520;
+	overflow:hidden;
+	width:6px;
+	height:11px;
+}
+
+/* ANIMATION SETUP
+================================*/
+
+@-ms-keyframes bird-eye-blink {
+	0%{height: 11px;width:6px;left:55px;}
+	73%{height: 11px;width:6px;left:55px;}
+	74%{height: 2px;width:15px;left:50px;}
+	75%{height: 2px;width:15px;left:50px;}
+	76%{height: 11px;width:6px;left:55px;}
+	77%{height: 11px;width:6px;left:55px;}
+	78%{height: 2px;width:15px;left:50px;}
+	79%{height: 11px;width:6px;left:55px;}
+	80%{height: 2px;width:15px;left:50px;}
+	81%{height: 11px;width:6px;left:55px;}
+	88%{height: 11px;width:6px;left:55px;}
+	89%{height: 2px;width:15px;left:50px;}
+	90%{height: 11px;width:6px;left:55px;}
+	100%{height: 11px;width:6px;left:55px;}
+	}
+
+/* ANIMATION FUNCTION
+================================*/
+
+#bird #bird-eye {
+-ms-animation-name: bird-eye-blink;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 0%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+/* BASIC SETUP
+================================*/
+#bird #bird-eyes {
+	bottom: 7px;
+	right:26px;
+	z-index:490;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-leg1-action {
+	0%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+	86%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+	87%{-ms-transform:rotate(-2deg);bottom:14px;right:26px;}
+	88%{-ms-transform:rotate(-2deg);bottom:14px;right:20px;}
+	89%{-ms-transform:rotate(0deg);bottom:7px;right:20px;}
+	90%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+	91%{-ms-transform:rotate(-2deg);bottom:14px;right:26px;}
+	92%{-ms-transform:rotate(-2deg);bottom:14px;right:20px;}
+	93%{-ms-transform:rotate(0deg);bottom:7px;right:20px;}
+	94%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+	95%{-ms-transform:rotate(-2deg);bottom:14px;right:26px;}
+	96%{-ms-transform:rotate(-2deg);bottom:14px;right:20px;}
+	97%{-ms-transform:rotate(0deg);bottom:7px;right:20px;}
+	98%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+	100%{-ms-transform:rotate(0deg);bottom:7px;right:26px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird #bird-leg-1 {
+-ms-animation-name: bird-leg1-action;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+/* BASIC SETUP
+================================*/
+#bird #bird-leg-2 {
+	bottom: 11px;
+	right:16px;
+	z-index:480;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-leg2-action {
+	0%{-ms-transform:rotate(0deg);			bottom:11px;		right:16px;}
+	85%{-ms-transform:rotate(0deg);			bottom:11px;		right:16px;}
+	86%{-ms-transform:rotate(-2deg);		bottom:18px;		right:16px;}
+	87%{-ms-transform:rotate(-2deg);		bottom:18px;		right:10px;}
+	88%{-ms-transform:rotate(0deg);			bottom:11px;		right:10px;}
+	89%{-ms-transform:rotate(0deg);			bottom:11px;		right:16px;}
+	90%{-ms-transform:rotate(-2deg);		bottom:18px;		right:16px;}
+	91%{-ms-transform:rotate(-2deg);		bottom:18px;		right:10px;}
+	92%{-ms-transform:rotate(0deg);			bottom:11px;		right:10px;}
+	93%{-ms-transform:rotate(0deg);			bottom:11px;		right:16px;}
+	94%{-ms-transform:rotate(-2deg);		bottom:18px;		right:16px;}
+	95%{-ms-transform:rotate(-2deg);		bottom:18px;		right:10px;}
+	96%{-ms-transform:rotate(0deg);			bottom:11px;		right:10px;}
+	97%{-ms-transform:rotate(0deg);			bottom:11px;		right:16px;}
+	100%{-ms-transform:rotate(0deg);		bottom:11px;		right:16px;}
+}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird #bird-leg-2 {
+-ms-animation-name: bird-leg2-action;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+
+#twtr {
+float:right;
+margin-top:20px;
+margin-right:50px;
+font-family: pupreg;
+font-size:1.75em;
+}
+
+#twtr a {
+	text-decoration:none;
+	color:#777;
+}
+
+#twtr a:hover {
+	color:yellow;
+}
+
+
+/* BASIC SETUP
+================================*/
+#bird-shadow {
+	position: absolute;
+	bottom: -85px;
+	height:20px;
+	width:100px;
+	right: -70px;
+	z-index: 100;
+	opacity:0;
+	border: 1px dotted transparent;
+}
+
+/* ANIMATION SETUP
+================================*/
+@-ms-keyframes bird-shadow {
+	0%{ 	-ms-transform: scale(.25); opacity:0;right: -70px;}
+	73%{ 	-ms-transform: scale(.25); opacity:0;right: -70px;}
+	74%{ 	-ms-transform: scale(.75); opacity:.75;right: -70px;}
+	86%{ 	-ms-transform: scale(.75); opacity:.75;right: -70px;}
+	100%{ 	-ms-transform: scale(1); opacity:1;right: -250px;}
+	}
+
+/* ANIMATION FUNCTION
+================================*/
+#bird-shadow {
+-ms-animation-name: bird-shadow;
+-ms-animation-duration:18s;
+-ms-animation-iteration-count:infinite;
+-ms-transform-origin:50% 100%;
+-ms-animation-delay:0;
+-ms-animation-timing-function:ease-in-out;
+}
+
+
+p#opt7 {
+	position:relative;
+	top:15px;
+	left:60px;
+	font-size: 12px;
+	color:#fff;
+	opacity: .5;
+}
+
+p#opt7:hover {
+	opacity: .75;
+}
+
+p#opt7 a {
+	color:yellow;
+	text-decoration:none;
+	opacity: .75;
+}
+
+
+
+
+
+
